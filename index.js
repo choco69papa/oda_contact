@@ -1,6 +1,6 @@
 $(function () {
 	
-    // 予約フォームを表示する
+    // お問い合わせフォームを表示する
     $('#form-number').click(function () {
         $('#form-name').empty();
         var inquiries = $('textarea[name="inquiries"]').val();

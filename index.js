@@ -12,7 +12,7 @@ $(function () {
 	var namelabel = $('input[name="namelabel"]').val();
         var inquiries = $('textarea[name="inquiries"]').val();
 	    
-        var msg = `＊＊お問い合わせ内容＊＊\n ${namelabel}\n ${inquiries}`;
+        var msg = ` ＊＊お問い合わせ内容＊＊ \n ${namelabel}\n ${inquiries}`;
         sendText(msg);
 
         return false;

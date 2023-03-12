@@ -3,16 +3,16 @@ $(function () {
     // お問い合わせフォームを表示する
     $('#form-number').click(function () {
         $('#form-name').empty();
-	var number = $('input[name="number"]').val();
+	var numbe = $('input[name="numbe"]').val();
         var inquiries = $('textarea[name="inquiries"]').val();
     });
 
     // 送信
     $('form').submit(function () {
-	var number = $('input[name="number"]').val();
+	var numbe = $('input[name="numbe"]').val();
         var inquiries = $('textarea[name="inquiries"]').val();
 	    
-        var msg = `＊＊お問い合わせ内容＊＊\n ${number}\n ${inquiries}`;
+        var msg = `＊＊お問い合わせ内容＊＊\n ${numbe}\n ${inquiries}`;
         sendText(msg);
 
         return false;
